@@ -92,17 +92,17 @@
     </nav>
 
 <!---FONDO-->
-    <header style="background-image: url('img/perfil.jpg'); max-width:100%;width: 100%;">
+    <header style="background-image: url('img/perfil.jpg'); max-width:100%;width:100%;">
         <div class="header-content">
             <div class="header-content-inner">
             </div> 	
         </div>
     </header>
 
-    <section  id="asistencia">
+    <section>
         <div class="container">
             <div class="row">
-                <div class="col-xs-12 col-lg-offset-2 text-center">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
                     <h2 class="section-heading">ESTOS ES EL REGISTRO DE TU ASISTENCIA DURANTE EL SEMESTRE</h2>
                     <hr class="primary">
                     <h4>Recuerda que debes optener minimo el 80% de asistencia para tener derecho a tus creditos de electivas.</h4>
@@ -116,8 +116,8 @@
         <br>
         <br>
 <!---GRAFICAS ASISTENCIA-->
-        <div class="wrapper">
-            <div class="chart-container" style=" width: 90%;">
+        <div class="wrapper" id="asistencia">
+            <div class="chart-container" style=" width: 75%;">
                 <canvas id="myChart"></canvas>
             </div>      
         </div>
@@ -134,6 +134,9 @@
                         label: "MI ASISTENCIA",
                         fill: false,
                         borderColor: '#00FF7F',
+                        highlight: "#0c62ab",
+                        fillColor : "#6b9dfa",
+                        strokeColor : "#6b9dfa",
                         data: [0, 10, 5, 2, 20, 30, 45],
                     }]
                 },
@@ -146,7 +149,7 @@
         </script>
     </section>
 
-    <section  id="registros">
+    <section>
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
@@ -162,7 +165,7 @@
         <br>
         <br>
 <!---GRAFICA PESO-->
-        <div class="wrapper">
+        <div class="wrapper" id="registros">
             <div class="chart-container" style=" width: 70%;">
                 <canvas id="myChart2"></canvas>
             </div>      
