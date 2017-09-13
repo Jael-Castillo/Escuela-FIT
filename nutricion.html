@@ -50,6 +50,9 @@
             flex-wrap: wrap;
             justify-content: center;
         }
+        div[class="col-lg-4 text-center"]>:hover{
+          padding-bottom: 50px;
+        }
     </style>
 </head>
 
@@ -72,26 +75,26 @@
                         <a class="page-scroll" href="./index.html">INICIO</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#rutinas">RUTINAS</a>
+                      <a class="page-scroll" href="#nutricion">NUTRICIÓN</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="./perfil.html">MIS REGISTROS</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="./ca.html">CALIDAD DEL AIRE</a>
+                        <a class="page-scroll" href="./rutina.html">RUTINAS</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="./nutricion.html">NUTRICIÓN</a>
+                        <a class="page-scroll" href="./ca.html">CALIDAD DEL AIRE</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">CONTACTO</a>
                     </li>
-                    <li> 
+                    <li>
                         <a href="./iniciars.html">
                         <span class="fa fa-power-off fa-2x text-primary sr-icons" style="margin-right: 10px;" aria-hidden="true">
                         </span>
                         </a>
-                    </li>                 
+                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -99,91 +102,109 @@
         <!-- /.container-fluid -->
     </nav>
 
-<!---FONDO-->
     <header style="background-image: url('img/perfil.jpg'); max-width:100%;width:100%;">
         <div class="header-content">
             <div class="header-content-inner">
-            </div> 	
+            </div>  
         </div>
     </header>
 
-    <section id="rutinas" class="no-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">CONSULTA TU RUTINA</h2>
-                    <hr class="primary">
-                    <h4>Recuerda que es importante tu constante asistencia para obtener buenos resultados.</h4>
-                    <div class="container"></div>
-                    <br>
-                    <br>
-                </div>
-                 <div class="col-xs-4 col-lg-8 col-lg-offset-2 col-xs-offset-1  text-center">
-                    <h4>¿HOY PUEDO EJERCITARME?</h4>
-                   <a href="./ca.html" class="btn btn-primary btn-xl page-scroll btn-center">Consulta la calidad del aire</a> &nbsp;
-                </div>
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <br>
-                    <br>
-                    <h3 class="section-heading">Debido a tu condición física se recomienda que realices las siguientes actividades.</h3>
-                </div>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-            <div class="col-xs-4 col-lg-8 col-lg-offset-4 col-xs-offset-1 text-center">
-                <div class="card" style="width: 38rem;">
-                  <img class="card-img-top" src="img/rutinas/rutina1.jpg" alt="Card image cap" style="border-radius: 10px;">
-                  <div class="card-body">
-                        <h4>Comienzá el día</h4><br>
-                    <p class="card-text">Comienza con 10 Abdominales de 3 repticiones, mientras alternas con 10 sentadillas todo por 20min.</p>
-                    <a href="https://youtu.be/k_u8obkaGE4" class="btn btn-primary btn-xl page-scroll btn-center">VER VIDEO</a>
+<!---FONDO-->
+    <section id="nutricion">
+      <div class="text-center">
+        <label for="find">Buscar</label>
+        <input type="search" name="find" value="" placeholder="Buscar">
+      </div>
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-4 text-center">
+                  <h2 class="section-heading">Manzana</h2>
+                  <hr class="primary">
+                  <img src="img/Nutricion/apple.jpg" alt="Manzana" style="max-width:100%;width:100%;">
+                  <div class="container"></div>
+                  <br>
+                  <br>
+                  <a href="#registros" class="btn btn-primary btn-xl page-scroll btn-center">More</a>
+              </div>
+              <div class="col-lg-4 text-center">
+                  <h2 class="section-heading">Pera</h2>
+                  <hr class="primary">
+                  <img src="img/Nutricion/pear.jpg" alt="Pera" style="max-width:100%;width:100%;">
+                  <div class="container"></div>
+                  <br>
+                  <br>
+                  <a href="#registros" class="btn btn-primary btn-xl page-scroll btn-center">More</a>
+              </div>
+              <div class="col-lg-4 text-center">
+                  <h2 class="section-heading">Leche</h2>
+                  <hr class="primary">
+                  <img src="img/Nutricion/milk.jpg" alt="Leche" style="max-width:100%;width:100%;">
+                  <div class="container"></div>
+                  <br>
+                  <br>
+                  <a href="#registros" class="btn btn-primary btn-xl page-scroll btn-center">More</a>
+              </div>
+              <div class="row">
+                  <div class="col-lg-4 text-center">
+                      <h2 class="section-heading">Arroz</h2>
+                      <hr class="primary">
+                      <img src="img/Nutricion/rice.jpg" alt="Arroz" style="max-width:100%;width:100%;">
+                      <div class="container"></div>
+                      <br>
+                      <br>
+                      <a href="#registros" class="btn btn-primary btn-xl page-scroll btn-center">More</a>
                   </div>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                <div class="card" style="width: 38rem;">
-                  <img class="card-img-top" src="img/rutinas/rutina2.jpg" alt="Card image cap" style="border-radius: 10px;">
-                  <div class="card-body">
-                    <h4>Medio día</h4><br>
-                    <p class="card-text">Corre por 30min ó toma 1hr de caminata</p>
-                    <a href="https://youtu.be/k_u8obkaGE4" class="btn btn-primary btn-xl page-scroll btn-center">VER VIDEO</a>
+                  <div class="col-lg-4 text-center">
+                      <h2 class="section-heading">Huevo</h2>
+                      <hr class="primary">
+                      <img src="img/Nutricion/egg.jpg" alt="Huevo" style="max-width:100%;width:100%;">
+                      <div class="container"></div>
+                      <br>
+                      <br>
+                      <a href="#registros" class="btn btn-primary btn-xl page-scroll btn-center">More</a>
                   </div>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                </div>
-                <div class="card" style="width: 38rem;">
-                  <img class="card-img-top" src="img/rutinas/rutina4.jpg" alt="Card image cap" style="border-radius: 10px;">
-                  <div class="card-body">
-                    <h4>Tarde</h4><br>
-                    <p class="card-text">Salta por 30min, brindará fuerza para tus piernas.</p>
-                    <a href="https://www.youtube.com/watch?time_continue=23&v=h1kRFvlsi" class="btn btn-primary btn-xl page-scroll btn-center">MÁS INFORMACIÓN</a>
+                  <div class="col-lg-4 text-center">
+                      <h2 class="section-heading">Aguacate</h2>
+                      <hr class="primary">
+                      <img src="img/Nutricion/avocado.jpg" alt="Aguacate" style="max-width:100%;width:100%;">
+                      <div class="container"></div>
+                      <br>
+                      <br>
+                      <a href="#registros" class="btn btn-primary btn-xl page-scroll btn-center">More</a>
                   </div>
-                </div>
-                </div>
-                </div>
-            </div>
-            </div>
-        </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <div class="alert alert-danger" role="alert">
-        RECUERDA CONSULTAR LA SECCIÓN DE <a href="#" class="alert-link">CLIMA</a> ANTES DE CUALQUIER ACTIVIDAD, ES RECOMENDABLE QUE CONSIDERES SI ES APTA O NO LA CALIDAD DEL AIRE PARA REALIZAR ALGUNA ACTIVIDAD DEPORTIVA.
-        <br>
-        <br>
-        </div>    
+          </div>
+          <div class="row">
+              <div class="col-lg-4 text-center">
+                  <h2 class="section-heading">Toronja</h2>
+                  <hr class="primary">
+                  <img src="img/Nutricion/toronja.jpg" alt="toronja" style="max-width:100%;width:100%;">
+                  <div class="container"></div>
+                  <br>
+                  <br>
+                  <a href="#registros" class="btn btn-primary btn-xl page-scroll btn-center">More</a>
+              </div>
+              <div class="col-lg-4 text-center">
+                  <h2 class="section-heading">Espinacas</h2>
+                  <hr class="primary">
+                  <img src="img/Nutricion/espinacas.jpg" alt="Espinacas" style="max-width:100%;width:100%;">
+                  <div class="container"></div>
+                  <br>
+                  <br>
+                  <a href="#registros" class="btn btn-primary btn-xl page-scroll btn-center">More</a>
+              </div>
+              <div class="col-lg-4 text-center">
+                  <h2 class="section-heading">Rabano</h2>
+                  <hr class="primary">
+                  <img src="img/Nutricion/rabano.jpg" alt="Rabano" style="max-width:100%;width:100%;">
+                  <div class="container"></div>
+                  <br>
+                  <br>
+                  <a href="#registros" class="btn btn-primary btn-xl page-scroll btn-center">More</a>
+              </div>
+      </div>
+      </div>
     </section>
-
-
-    <section class="bg-dark" id="contact">
+        <section class="bg-dark" id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
@@ -237,7 +258,6 @@
     <!-- Theme JavaScript -->
     <script src="js/creative.min.js"></script>
 
-    
 
 </body>
 
