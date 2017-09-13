@@ -7,10 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="electivas upiicsa">
-    <meta name="keywords" content=" upiicsa, ejercicios, electivas, ipn ">
+	<meta name="keywords" content=" upiicsa, ejercicios, electivas, ipn ">
 
     <title>www.escuelafit.com</title>
     <link rel="icon" href="img/icono.png">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Teko" rel="stylesheet">
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -25,14 +27,30 @@
 
     <!-- Theme CSS -->
     <link href="css/creative.min.css" rel="stylesheet">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
+    <!-- Canvas JavaScript´s -->
+    <script type="text/javascript" src="js/graficas/jquery-3.2.1.min"></script>
+    <script src="js/graficas/dist/Chart.bundle.js"></script>
+    <script src="js/graficas/utils.js"></script>
+    <!-- Canvas CSS -->
+    <style>
+        canvas {
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+        }
+        .chart-container {
+            width: 500px;
+            margin-left: 40px;
+            margin-right: 40px;
+            margin-bottom: 40px;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    </style>
 </head>
 
 <body id="page-top">
@@ -54,11 +72,20 @@
                         <a class="page-scroll" href="./index.html">INICIO</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="./iniciars.html">INICIAR SESIÓN</a>
+                        <a class="page-scroll" href="#asistencia">ASISTENCIA</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#registros">MIS REGISTROS</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">CONTACTO</a>
-                    </li>                                     
+                    </li>
+                    <li> 
+                        <a href="./iniciars.html">
+                        <span class="fa fa-power-off fa-2x text-primary sr-icons" style="margin-right: 10px;" aria-hidden="true">
+                        </span>
+                        </a>
+                    </li>                 
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -66,27 +93,36 @@
         <!-- /.container-fluid -->
     </nav>
 
-    <section class="bg-dark">
+<!---FONDO-->
+    <header style="background-image: url('img/perfil.jpg'); max-width:100%;width:100%;">
+        <div class="header-content">
+            <div class="header-content-inner">
+            </div> 	
+        </div>
+    </header>
+
+    <section>
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">SIGUE LOS PASOS!!!</h2>
-                    <hr class="light">
-                    <p class="text-faded">Primero que nada muchas feliciades estas apunto de ser parte de Escuela FIT.
-                    <br><br>
-                    Para finalizar tu inscripción requerimos que asistas a tu consulta médica en la cual evaluaremos:<br>
-                    <i class="fa fa-genderless" aria-hidden="true"></i> PESO<br>
-                    <i class="fa fa-genderless" aria-hidden="true"></i> CIRCUNFERENCIA DE LA CINTURA<br>
-                    <i class="fa fa-genderless" aria-hidden="true"></i> FRECUENCIA CARDIACA<br>
-                    <i class="fa fa-genderless" aria-hidden="true"></i> PRESIÓN ARTERIAL<br><br>
-
-                    </br>Por favor da Click en "confirma consulta" nosotros te informaremos de los días que puedes asistir y la hora.</p>
-                    <a href="./cuentaf.html" class="page-scroll btn btn-default btn-xl sr-button">CONFIRMAR CONSULTA</a>
+                    <h2 class="section-heading">CONSULTA TU RUTINA</h2>
+                    <hr class="primary">
+                    <h4>Recuerda que es importante tu constante asistencia para obtener buenos resultados.</h4>
+                    <div class="container"></div>
+                    <br>
+                    <br>
+                </div>
+                 <div class="col-xs-4 col-lg-8 col-lg-offset-2 col-xs-offset-1  text-center">
+                   <a href="./perfil.html" class="btn btn-primary btn-xl page-scroll btn-center">Consulta tus Registros</a> &nbsp;
                 </div>
             </div>
         </div>
+        <br>
+        <br>      
     </section>
-    <section id="contact">
+
+
+    <section class="bg-dark" id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
@@ -103,6 +139,9 @@
                     <p><a href="mailto:your-email@your-domain.com">escuela_fit@zoho.com
                     </a></p>
                 </div>
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <p><b>SIGUE NUESTRAS REDES SOCIALES !!!</b></p>
+                </div>
                 <div class="col-lg-4 col-lg-offset-2 text-center">
                     <a href="https://www.facebook.com"><i class="fa fa-3x fa-facebook-square sr-contact"></i></a>
                     <p>FACEBOOK</p>
@@ -111,18 +150,17 @@
                     <a href="https://www.youtube.com"><i class="fa fa-3x fa-youtube text-center sr-contact" aria-hidden="true"></i></a>
                     <p>YOUTUBE</p>
                 </div>
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <p>SIGUE NUESTRAS REDES SOCIALES!!</p>
-                </div>
-                <div class="col-xs-6 col-lg-6 text-center text-center">           
+                <div class="col-xs-6 col-lg-6 text-center text-center">
                     <img src="img/upiicsa.png"  width="100" height="100" style="margin-left:20px">
                 </div>
                 <div class="col-xs-6 col-lg-6 text-center text-center">
-                    <img src="img/logo_ipn.png"  width="100" height="100" style="margin-left:20px">
-                </div> 
+                    <img src="img/ipn.png"  width="70" height="100" style="margin-left:20px">
+                </div>                    
             </div>
         </div>
     </section>
+
+
 
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
@@ -137,6 +175,8 @@
 
     <!-- Theme JavaScript -->
     <script src="js/creative.min.js"></script>
+
+    
 
 </body>
 
